@@ -122,11 +122,12 @@ model = load_model(model_path)
 
 # --- Label Mapping ---
 labels_list = [
-    'Ha', 'ain', 'alif', 'alif_lam', 'ba', 'dal', 'dhad', 'dzal', 'fa',
-    'ghain', 'ha', 'jim', 'kaf', 'kha', 'lam', 'lam_alif', 'mim', 'nun',
-    'qaf', 'ra', 'shad', 'sin', 'syin', 'ta', 'ta_marbuta', 'tha', 'tsa',
-    'wau', 'ya', 'zay', 'zha'
+    'Ha (ه)', 'Ain (ع)', 'Alif (ا)', 'Alif Lam (ال)', 'Ba (ب)', 'Dal (د)', 'Dhad (ض)', 'Dzal (ذ)', 'Fa (ف)',
+    'Ghain (غ)', 'Ha\' (ح)', 'Jim (ج)', 'Kaf (ك)', 'Kha (خ)', 'Lam (ل)', 'Lam Alif (لا)', 'Mim (م)', 'Nun (ن)',
+    'Qaf (ق)', 'Ra (ر)', 'Shad (ص)', 'Sin (س)', 'Syin (ش)', 'Ta (ت)', 'Ta Marbuta (ة)', 'Tha (ط)', 'Tsa (ث)',
+    'Wau (و)', 'Ya (ي)', 'Zay (ز)', 'Zha (ظ)'
 ]
+
 
 # --- Prediction Function ---
 def predict(image):
