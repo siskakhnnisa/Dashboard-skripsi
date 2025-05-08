@@ -160,9 +160,10 @@ if uploaded_file is not None:
             st.markdown("---")
             st.subheader("🏅 Top-5 Prediksi Lain:")
             top5_prob, top5_idx = torch.topk(probabilities, 5)
-
+            
             for i in range(5):
                 label = labels_list[top5_idx[i]]
                 prob = top5_prob[i].item() * 100
-                st.write(f"**{label.upper()}**")
+                st.write(f"**{label.upper()}** - Confidence: {prob:.2f}%")
                 st.progress(min(int(prob), 100))  # Batasi ke 100%
+
