@@ -103,7 +103,7 @@ def load_model():
     model.classifier[1] = nn.Linear(num_ftrs, 31)
 
     # Load state_dict
-    model.load_state_dict(torch.load("model.pth", map_location=torch.device("cpu"), weights_only=False))
+    model.load_state_dict(torch.load("model.pth", map_location=torch.device("cpu")))
     model.eval()
     return model
 
