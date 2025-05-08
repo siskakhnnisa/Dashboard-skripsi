@@ -145,7 +145,7 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file).convert('RGB')
     
     # Menampilkan gambar di tengah
-    st.image(image, caption='📸 Gambar yang diupload', use_container_width=True)
+    st.image(image, caption='📸 Gambar yang diupload', width=300) 
 
     if st.button("🔍 Lakukan Prediksi"):
         with st.spinner('⏳ Sedang memproses...'):
