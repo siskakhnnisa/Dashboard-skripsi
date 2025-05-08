@@ -30,7 +30,7 @@ def load_model(model_path):
     model.classifier[1] = nn.Linear(num_ftrs, 31)  # Sesuaikan dengan jumlah kelas
     
     # Load trained weights with weights_only=False
-    model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu'), weights_only=False)
+    model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu'), weights_only=False))
     model.eval()
     return model
 
