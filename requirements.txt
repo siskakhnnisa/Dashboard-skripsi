@@ -1,7 +1,7 @@
 ConfigParser==7.2.0
 contextlib2==21.6.0
 cryptography==42.0.5
-docutils==0.18.1
+docutils>=0.20,<0.22
 filelock==3.18.0
 importlib_metadata==7.0.1
 ipython==8.25.0
