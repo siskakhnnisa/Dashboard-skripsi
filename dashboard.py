@@ -11,7 +11,7 @@ st.set_page_config(page_title="Sign Language Hijaiyyah Detection", layout="cente
 st.title("🖐️ Sign Language Hijaiyyah Detection with EfficientNet")
 st.write("Upload gambar huruf hijaiyyah dari bahasa isyarat Arab untuk dideteksi.")
 
-# --- Define Transformation (harus sama dengan training) ---
+# --- Define Transformation  ---
 transform = transforms.Compose([
     transforms.Resize((224, 224)),
     transforms.ToTensor(),
@@ -41,8 +41,13 @@ def load_model(model_path):
 model = load_model(model_path)
 
 # --- Label Mapping ---
-labels_list = ['ain', 'alif', 'ba', 'dhad', 'dal', 'fa', 'ghain', 'ha', 'Ha', 'jim', 'kaf', 'kha', 'lam', 'mim', 'nun', 'qaf', 
-               'ra', 'shad', 'sin', 'syin', 'tha', 'ta', 'ta_marbuta', 'dzal', 'tsa', 'wau', 'ya', 'zha', 'zay', 'alif_lam', 'lam_alif']
+labels_list = [
+    'Ha', 'ain', 'alif', 'alif_lam', 'ba', 'dal', 'dhad', 'dzal', 'fa',
+    'ghain', 'ha', 'jim', 'kaf', 'kha', 'lam', 'lam_alif', 'mim', 'nun',
+    'qaf', 'ra', 'shad', 'sin', 'syin', 'ta', 'ta_marbuta', 'tha', 'tsa',
+    'wau', 'ya', 'zay', 'zha'
+]
+
 
 
 # --- Prediction Function ---
