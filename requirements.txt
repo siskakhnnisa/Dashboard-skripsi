@@ -2,7 +2,7 @@ Cython>=0.29.21
 ConfigParser==7.2.0
 contextlib2==21.6.0
 cryptography==42.0.5
-docutils>=0.20,<0.22
+docutils==0.18.1
 filelock==3.18.0
 importlib_metadata==7.0.1
 ipython==8.25.0
@@ -17,7 +17,7 @@ protobuf==3.20.3
 pyOpenSSL==25.0.0
 railroad==0.5.0
 redis==6.0.0
-Sphinx==8.2.3
+sphinx<7.0
 streamlit==1.32.0
 thread==2.0.5
 torch==2.7.0
