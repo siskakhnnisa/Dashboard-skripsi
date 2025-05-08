@@ -34,7 +34,7 @@ def load_model(model_path):
     model.eval()
     return model
 
-model_path = "best_efficient_model.pth"  # Pastikan path ini benar
+model_path = "efficientnetb0.pth"  # Pastikan path ini benar
 model = load_model(model_path)
 
 # --- Label Mapping ---
