@@ -20,7 +20,9 @@ transform = transforms.Compose([
 ])
 
 # --- Load Model ---
-model_path = "model3.pth"
+# model_path = "model3.pth"
+
+model_path = "mnet_model.pth"
 
 @st.cache_resource(show_spinner=False)
 def load_model(model_path):
